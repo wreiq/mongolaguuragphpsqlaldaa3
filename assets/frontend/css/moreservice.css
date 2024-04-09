@@ -1,0 +1,7 @@
+/* <div class="row justify-content-center">
+                    <div class="room-btn pt-50">
+                        <a href="services.html" class="border-btn">More Services</a>
+                    </div> */
+.root-btn pt-50 { 
+    text-align:center;
+}
