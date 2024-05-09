@@ -24,7 +24,13 @@
             <link rel="stylesheet" href="assets/frontend/css/style.css">
             <link rel="stylesheet" href="assets/frontend/css/faq.css">
             <link rel="stylesheet" href="assets/frontend/css/banner.css">
+            <link rel="stylesheet" href="assets/frontend/css/lang.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+                
+            </script>
+
    </head>
+   
 
    <body>
        
@@ -43,16 +49,31 @@
 
     <header>
         <!-- Header Start -->
+     
+            
+        </div>
+        
        <div class="header-area">
             <div class="main-header ">
+               
                 <div class="header-top top-bg d-none d-lg-block">
                    <div class="container-fluid">
                        <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
+                                <div class="default-select" id="default-select">
+                                    <select onchange="redirectToPage(this)">
+                                        <option value="1">Mongolian</option>
+                                        <option value="2">English</option>
+                                        <option value="3">Russian</option>
+                                        <option value="4">Chinese</option>
+                                    
+                                    </select>
+                                </div>
                                 <div class="header-info-left">
                                     <ul>
-                                        <li><i class="fas fa-envelope"></i>index@mongolaguurag.com</li>
+                                        <li><i class="fas fa-envelope"></i>support@mongolaguurag.com</li>
                                     </ul>
+                                    
                                 </div>
                                 <div class="header-info-right">
                                     <!-- <ul class="header-social">    
@@ -75,8 +96,10 @@
                             <div class="col-xl-2 col-lg-1 col-md-1">
                                 <div class="logo">
                                   <a href="index.html"><img src="assets/frontend/img/logo/logo.png" alt=""></a>
+                      
                                 </div>
                             </div>
+                            
                             <!-- <div class="col-xl-8 col-lg-8 col-md-8">
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav> 
@@ -182,7 +205,7 @@
                             <div class="single-profile-back-last">
                                 <h2>Бид бусдаас юугаараа илүү вэ</h2>
                                 <p>Манай бусдаас шинэлэг амт, үнэрийг шингээсэн болно.</p>
-                                <a href="#">Цааш нь үзэх </a>
+                                <a href="/services.html">Цааш нь үзэх </a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +277,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="room-btn pt-50">
-                        <a href="services.html" class="border-btn">Үйлчилгээний мэдээлэл</a>
+                        <a href="/termsofservices.html" class="border-btn">Үйлчилгээний мэдээлэл</a>
                     </div>
                 </div>
             </div>
@@ -267,7 +290,7 @@
                         <div class="single-cases-info mb-30">
                             <h3>Бүтээгдэхүүний төрөл</h3>
                             <p>Төрлийн нэр.</p>
-                            <a href="#" class="border-btn border-btn2">Дэлгэрэнгүй</a>
+                            <a href="/vapecateg.html" class="border-btn border-btn2">Дэлгэрэнгүй</a>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8 col-md-col-md-7">
@@ -343,6 +366,7 @@
                </div>
             </div>
         </div>
+        
         <div class="recent-area section-paddingt">
             <div class="container">
                 <div class="row">
@@ -360,7 +384,7 @@
                             </div>
                             <div class="recent-cap">
                                 <span>Нийтлэл</span>
-                                <h4><a href="single-blog.html">Vape хэрэглэх нь эрүүл мэндэд муу юу? </a></h4>
+                                <h4><a href="/front-post1.html">Vape хэрэглэх нь эрүүл мэндэд муу юу? </a></h4>
                                 <p>Шинэ</p>
                             </div>
                         </div>
@@ -372,7 +396,7 @@
                             </div>
                             <div class="recent-cap">
                                 <span>Device</span>
-                                <h4><a href="single-blog.html">Mongol aguurag - Axe төхөөрөмж нь ямар давуу талтай вэ?</a></h4>
+                                <h4><a href="/front-post2.html">Mongol aguurag - Axe төхөөрөмж нь ямар давуу талтай вэ?</a></h4>
                                 <p>Шинэ</p>
                             </div>
                         </div>
@@ -384,7 +408,7 @@
                             </div>
                             <div class="recent-cap">
                                 <span>Нэг удаагийн vape</span>
-                                <h4><a href="single-blog.html">Mongol aguurag white-ийн талаар</a></h4>
+                                <h4><a href="/front-post3.html">Mongol aguurag white-ийн талаар</a></h4>
                                 <p>Шинэ</p>
                             </div>
                         </div>
@@ -467,10 +491,10 @@
                             <!-- SOCIAL PANEL HTML -->
                             <div class="social-panel-container">
                               <div class="social-panel">
-                                <p>Created with  by
+                                <p>Support us 
                                   <a target="_blank" href="#">Mongol aguurag</a></p>
                                 <button class="close-btn"><i class="fas fa-times"></i></button>
-                                <h4>Бидэнтэй холбогдох</h4>
+                                <h4>Бидэнтэй нэгдэх</h4>
                                 <ul>
                                   <li>
                                     <a href="https://discord.gg/EMBeYrsU" target="_blank">
@@ -535,12 +559,7 @@ Facebook page</a>
                                 </div>
                              </div>
   
-                             <ul class="social-icons">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                             </ul>
+                             
   
                          </div>
                        </div>
@@ -598,7 +617,49 @@ Facebook page</a>
         </div>
         <!-- Footer End-->
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var selectElement = document.getElementById("language-picker-select");
+            selectElement.addEventListener("change", function() {
+                var selectedOption = selectElement.options[selectElement.selectedIndex];
+                var selectedValue = selectedOption.value;
+                window.location.href = selectedValue;
+            });
+        });
+        
+    </script>
 	<script src="./assets/global/scripts/faq.js"></script>
+    <script>
+        function redirectToPage(select) {
+            var selectedOption = select.options[select.selectedIndex];
+            var value = selectedOption.value;
+            var destination = "";
+    
+            switch (value) {
+                case "1":
+                    destination = "english_page.html";
+                    break;
+                case "2":
+                    destination = "spanish_page.html";
+                    break;
+                case "3":
+                    destination = "arabic_page.html";
+                    break;
+                case "4":
+                    destination = "portuguese_page.html";
+                    break;
+                case "5":
+                    destination = "bengali_page.html";
+                    break;
+                default:
+                    // default destination
+                    destination = "#";
+            }
+    
+            // Redirect to the selected page
+            window.location.href = destination;
+        }
+    </script>
         <script src="./assets/frontend/js/vendor/modernizr-3.5.0.min.js"></script>
 		<script src="./assets/frontend/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="./assets/frontend/js/popper.min.js"></script>
@@ -607,7 +668,7 @@ Facebook page</a>
 
         <script src="./assets/frontend/js/owl.carousel.min.js"></script>
         <script src="./assets/frontend/js/slick.min.js"></script>
-
+        <script src="./assets/frontend/js/lang.js"></script>
         <script src="./assets/frontend/js/gijgo.min.js"></script>
 
         <script src="./assets/frontend/js/wow.min.js"></script>
