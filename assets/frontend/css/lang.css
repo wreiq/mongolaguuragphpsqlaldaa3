@@ -1,0 +1,6 @@
+.default-select {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* adjust this value according to your preference */
+  transform: translateY(-50%);
+}
